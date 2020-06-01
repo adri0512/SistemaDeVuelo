@@ -13,8 +13,7 @@ public class SistemaDeVuelo {
 
     public static void main(String[] args) {
       System.out.println("hola desde git");  
-        System.out.println("Hola desde netbeans");
-         System.out.println("una prueba más desde git");
+        
     }
     
 }
