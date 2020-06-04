@@ -3,8 +3,11 @@ package sistemadevuelo;
 
 
 public class ServicioDeOperaciones extends PersonalAdministrativo {
-    int IdVuelo , Distancia , CambioHorario ,  Salida , Llegada;
-    String DestinoAeropuerto;
+
+    public ServicioDeOperaciones(String NombreArea, String Encargado) {
+        super(NombreArea, Encargado);
+    }
+
     
     public void InformacionViaje(){
         
@@ -16,6 +19,11 @@ public class ServicioDeOperaciones extends PersonalAdministrativo {
         
     }
     public void TipoViaje(){
+        
+    }
+
+    @Override
+    public void areas() {
         
     }
 }
