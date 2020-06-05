@@ -1,32 +1,33 @@
 
 package sistemadevuelo;
 
+import javax.swing.*;
+
 
 public class DatosAeropuerto {
-    int IdAeropuerto , Telefono , HorarioVuelo,nPuerta;
+    int IdAeropuerto , Telefono , HorarioAeropuerto,nPuerta;
     String Nombre , Direccion , CorreoElectronico;
 
-    public DatosAeropuerto(int IdAeropuerto, int Telefono, int HorarioVuelo, String Nombre, String Direccion, String CorreoElectronico, int nPuerta) {
+    public DatosAeropuerto(int IdAeropuerto, int Telefono, int HorarioAeropuerto, String Nombre, String Direccion, String CorreoElectronico, int nPuerta) {
         this.IdAeropuerto = IdAeropuerto;
         this.Telefono = Telefono;
-        this.HorarioVuelo = HorarioVuelo;
+        this.HorarioAeropuerto = HorarioAeropuerto;
         this.Nombre = Nombre;
         this.Direccion = Direccion;
         this.CorreoElectronico = CorreoElectronico;
         this.nPuerta = nPuerta;
     }
+    public void mostrarDatos(){ //INFORMACIÓN DE NUESTRO AEROPUERTO
+          JOptionPane.showMessageDialog(null,"BIENVENIDOS A "+Nombre
+                  +"\nID: "+IdAeropuerto
+                  +"\nCONTACTANOS: "+Telefono
+                  +"\nNOS UBICAMOS: "+Direccion
+                  +"\nE-MAIL: "+CorreoElectronico
+                  +"\nDISPONIBLES LAS "+HorarioAeropuerto+" HORAS"
+                  +"\nNUMERO DE PUERTAS DE VIAJE:"+nPuerta,"BIENVENIDOS",2);
+         
+    }
+    
+    
 
-   public void mostrarDatos(){
-       System.out.println("// ID:"+IdAeropuerto);
-       System.out.println("// BIENVENIDO A: "+Nombre+" //");
-       System.out.println("ESTAMOS EN: "+Direccion);
-       System.out.println("e-Mail: "+CorreoElectronico);
-       System.out.println("> CONTACTANOS: "+Telefono);
-       System.out.println("CONTAMOS CON: "+nPuerta+" PUERTAS");
-       System.out.println("DISPONIBLE LAS"+HorarioVuelo+" horas :D");
-       
-       
-   }
-    
-    
 }

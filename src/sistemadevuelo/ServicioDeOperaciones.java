@@ -1,7 +1,7 @@
 
 package sistemadevuelo;
 
-
+import javax.swing.*;
 public class ServicioDeOperaciones extends PersonalAdministrativo {
 
     public ServicioDeOperaciones(String NombreArea, String Encargado) {
@@ -24,6 +24,6 @@ public class ServicioDeOperaciones extends PersonalAdministrativo {
 
     @Override
     public void areas() {
-        
+        JOptionPane.showMessageDialog(null,"SE MOSTRARÁ LA INFORMACIÓN DE TU VUELO","VUELO",2);
     }
 }
